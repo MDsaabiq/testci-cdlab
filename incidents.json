@@ -1,0 +1,7 @@
+[
+  {
+    "incident_id": "INC-1",
+    "issue": "GitHub Actions failed: ModuleNotFoundError: No module named 'app'.",
+    "fix": "Added app/__init__.py and changed the CI command to python -m pytest app/tests."
+  }
+]
