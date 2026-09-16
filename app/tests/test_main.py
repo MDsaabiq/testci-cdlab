@@ -9,7 +9,7 @@ def test_root() -> None:
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.json()["app"] == "AI CI/CD Failure Investigator"
+    assert response.json()["app"] == "Wrong App Name"
 
 
 def test_health() -> None:
