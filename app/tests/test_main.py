@@ -6,7 +6,7 @@ client = TestClient(app)
 
 
 def test_root() -> None:
-    response = client.get("/")
+    response = client.get("/index")
 
     assert response.status_code == 200
     assert response.json()["app"] == "AI CI/CD Failure Investigator"
